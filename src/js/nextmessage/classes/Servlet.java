@@ -3,11 +3,8 @@ package js.nextmessage.classes;
 import java.awt.Dimension;
 import java.awt.Toolkit;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
 import java.io.PrintStream;
 import java.util.HashMap;
 
@@ -17,8 +14,6 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
-
-import org.apache.commons.io.IOUtils;
 
 import com.twilio.twiml.Body;
 import com.twilio.twiml.Message;
@@ -35,6 +30,7 @@ import com.twilio.twiml.TwiMLException;
 * Version: 1.0
 * Date: 7/27/17
 */
+
 public class Servlet extends HttpServlet
 {
 
@@ -61,22 +57,34 @@ public class Servlet extends HttpServlet
 		{
 			e.printStackTrace();
 			System.exit(0);
-		}
-		
-		String path = extractNgrok();
-		
+		} 
+
+		//String path = extractNgrok();
 		frame = new JFrame();
 		
-		String message = "SET UP STEPS: \n\n1. Navigate to: " + path
+	/*	String message = "SET UP STEPS: \n\n1. Navigate to: " + path
 				+ "\n2. Click \"ngrok.exe\""
 				+ "\n3. Enter \"ngrok http 8080\" in the command window that pops up"
 				+ "\n4. Copy or take note of the address in the format \"xxxxx.ngrok.io\" that should show up in the window"
 				+ "\n5. Navigate to https://www.twilio.com/console/phone-numbers/"
 				+ "\n6. Click on the phone number and scroll down to Messaging"
 				+ "\n7. Make sure that \"Configure With\" is set to WebHooks, Twiml Bins or Functions"
-				+ "\n8. Make sure that \"A Message Comes In\" is set to Webhook, then copy the ngrok.io address into the text box"
+				+ "\n8. Make sure that \"A Message Comes In\" is set to Webhook, then copy the ngrok.io address into the text box, and add /NextMessage to the end"
 				+ "\n9. Click save at the bottom"
-				+ "\n10 The server is now set up";
+				+ "\n10 The server is now set up"; */
+		
+	//	String systemType = System.getProperty("os.name");
+		
+		String message = "SET UP STEPS: \n\n1. Navigate to the first window that popped up, which should say \"Press any key to continue\" at the bottom"
+				+ "\n2. Press any key to activate ngrok"
+				+ "\n3. Copy or take note of the address in the format \"xxxxx.ngrok.io\" that should show up in the window"
+				+ "\n4. Navigate to https://www.twilio.com/console/phone-numbers/"
+				+ "\n5. Click on the phone number and scroll down to Messaging"
+				+ "\n6. Make sure that \"Configure With\" is set to WebHooks, Twiml Bins or Functions"
+				+ "\n7. Make sure that \"A Message Comes In\" is set to Webhook, then copy the ngrok.io address into the text box. Add /NextMessage right after \".io\""
+				+ "\n8. Click save at the bottom"
+				+ "\n9. Press \"ok\" on this dialogue box to start server";
+				
 		
 		JOptionPane.showMessageDialog(frame, message);
 		
@@ -273,7 +281,7 @@ public class Servlet extends HttpServlet
 	}
 	
 	//Extract Ngrok.exe
-	private String extractNgrok()
+/*	private String extractNgrok()
 	{
 		try
 		{
@@ -310,5 +318,5 @@ public class Servlet extends HttpServlet
 			System.exit(0);
 		}
 		return null;
-	}
+	} */
 }

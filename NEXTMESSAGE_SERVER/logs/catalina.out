@@ -1,0 +1,642 @@
+Jul 27, 2017 3:40:35 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.2.12 using APR version 1.5.2.
+Jul 27, 2017 3:40:35 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+Jul 27, 2017 3:40:36 PM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFO: OpenSSL successfully initialized with version OpenSSL 1.0.2k  26 Jan 2017
+Jul 27, 2017 3:40:36 PM org.apache.coyote.http11.Http11AprProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Jul 27, 2017 3:40:36 PM org.apache.coyote.ajp.AjpAprProtocol init
+INFO: Initializing Coyote AJP/1.3 on ajp-8009
+Jul 27, 2017 3:40:36 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 861 ms
+Jul 27, 2017 3:40:36 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Jul 27, 2017 3:40:36 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.53
+Jul 27, 2017 3:40:36 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Jul 27, 2017 3:40:36 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Jul 27, 2017 3:40:36 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive NextMessage.war
+Jul 27, 2017 3:41:00 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.2.12 using APR version 1.5.2.
+Jul 27, 2017 3:41:00 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+Jul 27, 2017 3:41:01 PM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFO: OpenSSL successfully initialized with version OpenSSL 1.0.2k  26 Jan 2017
+Jul 27, 2017 3:41:01 PM org.apache.coyote.http11.Http11AprProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Jul 27, 2017 3:41:01 PM org.apache.coyote.ajp.AjpAprProtocol init
+INFO: Initializing Coyote AJP/1.3 on ajp-8009
+Jul 27, 2017 3:41:01 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 844 ms
+Jul 27, 2017 3:41:01 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Jul 27, 2017 3:41:01 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.53
+Jul 27, 2017 3:41:01 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Jul 27, 2017 3:41:01 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Jul 27, 2017 3:41:01 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive NextMessage.war
+Jul 28, 2017 11:56:22 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.2.12 using APR version 1.5.2.
+Jul 28, 2017 11:56:22 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+Jul 28, 2017 11:56:23 AM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFO: OpenSSL successfully initialized with version OpenSSL 1.0.2k  26 Jan 2017
+Jul 28, 2017 11:56:23 AM org.apache.coyote.http11.Http11AprProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Jul 28, 2017 11:56:23 AM org.apache.coyote.ajp.AjpAprProtocol init
+INFO: Initializing Coyote AJP/1.3 on ajp-8009
+Jul 28, 2017 11:56:23 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 859 ms
+Jul 28, 2017 11:56:23 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Jul 28, 2017 11:56:23 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.53
+Jul 28, 2017 11:56:23 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Jul 28, 2017 11:56:23 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Jul 28, 2017 11:56:23 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive NextMessage.war
+Jul 28, 2017 11:56:26 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Jul 28, 2017 11:56:26 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Jul 28, 2017 11:56:26 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Jul 28, 2017 11:56:26 AM org.apache.coyote.http11.Http11AprProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Jul 28, 2017 11:56:26 AM org.apache.coyote.ajp.AjpAprProtocol start
+INFO: Starting Coyote AJP/1.3 on ajp-8009
+Jul 28, 2017 11:56:26 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 2974 ms
+Jul 28, 2017 11:57:07 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.2.12 using APR version 1.5.2.
+Jul 28, 2017 11:57:07 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+Jul 28, 2017 11:57:08 AM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFO: OpenSSL successfully initialized with version OpenSSL 1.0.2k  26 Jan 2017
+Jul 28, 2017 11:57:08 AM org.apache.coyote.http11.Http11AprProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Jul 28, 2017 11:57:08 AM org.apache.coyote.ajp.AjpAprProtocol init
+INFO: Initializing Coyote AJP/1.3 on ajp-8009
+Jul 28, 2017 11:57:08 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 881 ms
+Jul 28, 2017 11:57:08 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Jul 28, 2017 11:57:08 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.53
+Jul 28, 2017 11:57:08 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Jul 28, 2017 11:57:08 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Jul 28, 2017 11:57:08 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive NextMessage.war
+Jul 28, 2017 11:57:11 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Jul 28, 2017 11:57:11 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Jul 28, 2017 11:57:11 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Jul 28, 2017 11:57:11 AM org.apache.coyote.http11.Http11AprProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Jul 28, 2017 11:57:11 AM org.apache.coyote.ajp.AjpAprProtocol start
+INFO: Starting Coyote AJP/1.3 on ajp-8009
+Jul 28, 2017 11:57:11 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 2899 ms
+Jul 28, 2017 11:57:35 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.2.12 using APR version 1.5.2.
+Jul 28, 2017 11:57:35 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+Jul 28, 2017 11:57:35 AM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFO: OpenSSL successfully initialized with version OpenSSL 1.0.2k  26 Jan 2017
+Jul 28, 2017 11:57:35 AM org.apache.coyote.http11.Http11AprProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Jul 28, 2017 11:57:35 AM org.apache.coyote.ajp.AjpAprProtocol init
+INFO: Initializing Coyote AJP/1.3 on ajp-8009
+Jul 28, 2017 11:57:35 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 863 ms
+Jul 28, 2017 11:57:35 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Jul 28, 2017 11:57:35 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.53
+Jul 28, 2017 11:57:35 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Jul 28, 2017 11:57:35 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Jul 28, 2017 11:57:35 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive NextMessage.war
+Jul 28, 2017 11:57:38 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Jul 28, 2017 11:57:38 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Jul 28, 2017 11:57:38 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Jul 28, 2017 11:57:38 AM org.apache.coyote.http11.Http11AprProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Jul 28, 2017 11:57:38 AM org.apache.coyote.ajp.AjpAprProtocol start
+INFO: Starting Coyote AJP/1.3 on ajp-8009
+Jul 28, 2017 11:57:38 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 2672 ms
+Jul 28, 2017 11:58:07 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.2.12 using APR version 1.5.2.
+Jul 28, 2017 11:58:07 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+Jul 28, 2017 11:58:07 AM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFO: OpenSSL successfully initialized with version OpenSSL 1.0.2k  26 Jan 2017
+Jul 28, 2017 11:58:07 AM org.apache.coyote.http11.Http11AprProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Jul 28, 2017 11:58:07 AM org.apache.coyote.ajp.AjpAprProtocol init
+INFO: Initializing Coyote AJP/1.3 on ajp-8009
+Jul 28, 2017 11:58:07 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 872 ms
+Jul 28, 2017 11:58:07 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Jul 28, 2017 11:58:07 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.53
+Jul 28, 2017 11:58:07 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Jul 28, 2017 11:58:07 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Jul 28, 2017 11:58:07 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive NextMessage.war
+Jul 28, 2017 11:58:10 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Jul 28, 2017 11:58:10 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Jul 28, 2017 11:58:10 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Jul 28, 2017 11:58:10 AM org.apache.coyote.http11.Http11AprProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Jul 28, 2017 11:58:10 AM org.apache.coyote.ajp.AjpAprProtocol start
+INFO: Starting Coyote AJP/1.3 on ajp-8009
+Jul 28, 2017 11:58:10 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 3047 ms
+Jul 28, 2017 11:58:53 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.2.12 using APR version 1.5.2.
+Jul 28, 2017 11:58:53 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+Jul 28, 2017 11:58:53 AM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFO: OpenSSL successfully initialized with version OpenSSL 1.0.2k  26 Jan 2017
+Jul 28, 2017 11:58:54 AM org.apache.coyote.http11.Http11AprProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Jul 28, 2017 11:58:54 AM org.apache.coyote.ajp.AjpAprProtocol init
+INFO: Initializing Coyote AJP/1.3 on ajp-8009
+Jul 28, 2017 11:58:54 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 861 ms
+Jul 28, 2017 11:58:54 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Jul 28, 2017 11:58:54 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.53
+Jul 28, 2017 11:58:54 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Jul 28, 2017 11:58:54 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Jul 28, 2017 11:58:54 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive NextMessage.war
+Jul 28, 2017 11:58:56 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Jul 28, 2017 11:58:56 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Jul 28, 2017 11:58:57 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Jul 28, 2017 11:58:57 AM org.apache.coyote.http11.Http11AprProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Jul 28, 2017 11:58:57 AM org.apache.coyote.ajp.AjpAprProtocol start
+INFO: Starting Coyote AJP/1.3 on ajp-8009
+Jul 28, 2017 11:58:57 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 3047 ms
+Jul 28, 2017 11:59:26 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.2.12 using APR version 1.5.2.
+Jul 28, 2017 11:59:26 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+Jul 28, 2017 11:59:26 AM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFO: OpenSSL successfully initialized with version OpenSSL 1.0.2k  26 Jan 2017
+Jul 28, 2017 11:59:27 AM org.apache.coyote.http11.Http11AprProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Jul 28, 2017 11:59:27 AM org.apache.coyote.ajp.AjpAprProtocol init
+INFO: Initializing Coyote AJP/1.3 on ajp-8009
+Jul 28, 2017 11:59:27 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 876 ms
+Jul 28, 2017 11:59:27 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Jul 28, 2017 11:59:27 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.53
+Jul 28, 2017 11:59:27 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Jul 28, 2017 11:59:27 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Jul 28, 2017 11:59:27 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive NextMessage.war
+Jul 28, 2017 11:59:37 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.2.12 using APR version 1.5.2.
+Jul 28, 2017 11:59:37 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+Jul 28, 2017 11:59:37 AM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFO: OpenSSL successfully initialized with version OpenSSL 1.0.2k  26 Jan 2017
+Jul 28, 2017 11:59:38 AM org.apache.coyote.http11.Http11AprProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Jul 28, 2017 11:59:38 AM org.apache.coyote.ajp.AjpAprProtocol init
+INFO: Initializing Coyote AJP/1.3 on ajp-8009
+Jul 28, 2017 11:59:38 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 882 ms
+Jul 28, 2017 11:59:38 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Jul 28, 2017 11:59:38 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.53
+Jul 28, 2017 11:59:38 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Jul 28, 2017 11:59:38 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Jul 28, 2017 11:59:38 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive NextMessage.war
+Jul 28, 2017 11:59:41 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Jul 28, 2017 11:59:41 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Jul 28, 2017 11:59:41 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Jul 28, 2017 11:59:41 AM org.apache.coyote.http11.Http11AprProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Jul 28, 2017 11:59:41 AM org.apache.coyote.ajp.AjpAprProtocol start
+INFO: Starting Coyote AJP/1.3 on ajp-8009
+Jul 28, 2017 11:59:41 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 3964 ms
+Jul 28, 2017 11:59:54 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.2.12 using APR version 1.5.2.
+Jul 28, 2017 11:59:54 AM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+Jul 28, 2017 11:59:55 AM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFO: OpenSSL successfully initialized with version OpenSSL 1.0.2k  26 Jan 2017
+Jul 28, 2017 11:59:55 AM org.apache.coyote.http11.Http11AprProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Jul 28, 2017 11:59:55 AM org.apache.coyote.ajp.AjpAprProtocol init
+INFO: Initializing Coyote AJP/1.3 on ajp-8009
+Jul 28, 2017 11:59:55 AM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 859 ms
+Jul 28, 2017 11:59:55 AM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Jul 28, 2017 11:59:55 AM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.53
+Jul 28, 2017 11:59:55 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Jul 28, 2017 11:59:55 AM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Jul 28, 2017 11:59:55 AM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive NextMessage.war
+Jul 28, 2017 11:59:58 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Jul 28, 2017 11:59:58 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Jul 28, 2017 11:59:58 AM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Jul 28, 2017 11:59:58 AM org.apache.coyote.http11.Http11AprProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Jul 28, 2017 11:59:58 AM org.apache.coyote.ajp.AjpAprProtocol start
+INFO: Starting Coyote AJP/1.3 on ajp-8009
+Jul 28, 2017 11:59:58 AM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 3530 ms
+Jul 28, 2017 12:00:08 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.2.12 using APR version 1.5.2.
+Jul 28, 2017 12:00:08 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+Jul 28, 2017 12:00:08 PM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFO: OpenSSL successfully initialized with version OpenSSL 1.0.2k  26 Jan 2017
+Jul 28, 2017 12:00:08 PM org.apache.coyote.http11.Http11AprProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Jul 28, 2017 12:00:08 PM org.apache.coyote.ajp.AjpAprProtocol init
+INFO: Initializing Coyote AJP/1.3 on ajp-8009
+Jul 28, 2017 12:00:08 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 879 ms
+Jul 28, 2017 12:00:08 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Jul 28, 2017 12:00:08 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.53
+Jul 28, 2017 12:00:08 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Jul 28, 2017 12:00:09 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Jul 28, 2017 12:00:09 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive NextMessage.war
+Jul 28, 2017 12:00:12 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Jul 28, 2017 12:00:12 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Jul 28, 2017 12:00:12 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Jul 28, 2017 12:00:12 PM org.apache.coyote.http11.Http11AprProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Jul 28, 2017 12:00:12 PM org.apache.coyote.ajp.AjpAprProtocol start
+INFO: Starting Coyote AJP/1.3 on ajp-8009
+Jul 28, 2017 12:00:12 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 3282 ms
+Jul 28, 2017 12:00:40 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.2.12 using APR version 1.5.2.
+Jul 28, 2017 12:00:40 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+Jul 28, 2017 12:00:40 PM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFO: OpenSSL successfully initialized with version OpenSSL 1.0.2k  26 Jan 2017
+Jul 28, 2017 12:00:40 PM org.apache.coyote.http11.Http11AprProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Jul 28, 2017 12:00:40 PM org.apache.coyote.ajp.AjpAprProtocol init
+INFO: Initializing Coyote AJP/1.3 on ajp-8009
+Jul 28, 2017 12:00:40 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 902 ms
+Jul 28, 2017 12:00:40 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Jul 28, 2017 12:00:40 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.53
+Jul 28, 2017 12:00:40 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Jul 28, 2017 12:00:41 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Jul 28, 2017 12:00:41 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive NextMessage.war
+Jul 28, 2017 12:00:44 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Jul 28, 2017 12:00:44 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Jul 28, 2017 12:00:44 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Jul 28, 2017 12:00:44 PM org.apache.coyote.http11.Http11AprProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Jul 28, 2017 12:00:44 PM org.apache.coyote.ajp.AjpAprProtocol start
+INFO: Starting Coyote AJP/1.3 on ajp-8009
+Jul 28, 2017 12:00:44 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 3946 ms
+Jul 28, 2017 12:02:02 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.2.12 using APR version 1.5.2.
+Jul 28, 2017 12:02:02 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+Jul 28, 2017 12:02:02 PM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFO: OpenSSL successfully initialized with version OpenSSL 1.0.2k  26 Jan 2017
+Jul 28, 2017 12:02:02 PM org.apache.coyote.http11.Http11AprProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Jul 28, 2017 12:02:02 PM org.apache.coyote.ajp.AjpAprProtocol init
+INFO: Initializing Coyote AJP/1.3 on ajp-8009
+Jul 28, 2017 12:02:02 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 856 ms
+Jul 28, 2017 12:02:02 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Jul 28, 2017 12:02:02 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.53
+Jul 28, 2017 12:02:02 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Jul 28, 2017 12:02:02 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Jul 28, 2017 12:02:02 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive NextMessage.war
+Jul 28, 2017 12:02:05 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Jul 28, 2017 12:02:05 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Jul 28, 2017 12:02:05 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Jul 28, 2017 12:02:05 PM org.apache.coyote.http11.Http11AprProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Jul 28, 2017 12:02:05 PM org.apache.coyote.ajp.AjpAprProtocol start
+INFO: Starting Coyote AJP/1.3 on ajp-8009
+Jul 28, 2017 12:02:05 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 2501 ms
+Jul 28, 2017 12:02:30 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.2.12 using APR version 1.5.2.
+Jul 28, 2017 12:02:30 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+Jul 28, 2017 12:02:31 PM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFO: OpenSSL successfully initialized with version OpenSSL 1.0.2k  26 Jan 2017
+Jul 28, 2017 12:02:31 PM org.apache.coyote.http11.Http11AprProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Jul 28, 2017 12:02:31 PM org.apache.coyote.ajp.AjpAprProtocol init
+INFO: Initializing Coyote AJP/1.3 on ajp-8009
+Jul 28, 2017 12:02:31 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 877 ms
+Jul 28, 2017 12:02:31 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Jul 28, 2017 12:02:31 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.53
+Jul 28, 2017 12:02:31 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Jul 28, 2017 12:02:31 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Jul 28, 2017 12:02:31 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive NextMessage.war
+Jul 28, 2017 12:02:58 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Jul 28, 2017 12:02:58 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Jul 28, 2017 12:02:58 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Jul 28, 2017 12:02:58 PM org.apache.coyote.http11.Http11AprProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Jul 28, 2017 12:02:58 PM org.apache.coyote.ajp.AjpAprProtocol start
+INFO: Starting Coyote AJP/1.3 on ajp-8009
+Jul 28, 2017 12:02:58 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 26852 ms
+Jul 28, 2017 12:03:03 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.2.12 using APR version 1.5.2.
+Jul 28, 2017 12:03:03 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+Jul 28, 2017 12:03:04 PM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFO: OpenSSL successfully initialized with version OpenSSL 1.0.2k  26 Jan 2017
+Jul 28, 2017 12:03:04 PM org.apache.coyote.http11.Http11AprProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Jul 28, 2017 12:03:04 PM org.apache.coyote.ajp.AjpAprProtocol init
+INFO: Initializing Coyote AJP/1.3 on ajp-8009
+Jul 28, 2017 12:03:04 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 860 ms
+Jul 28, 2017 12:03:04 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Jul 28, 2017 12:03:04 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.53
+Jul 28, 2017 12:03:04 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Jul 28, 2017 12:03:04 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Jul 28, 2017 12:03:04 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive NextMessage.war
+Jul 28, 2017 12:03:26 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.2.12 using APR version 1.5.2.
+Jul 28, 2017 12:03:26 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+Jul 28, 2017 12:03:26 PM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFO: OpenSSL successfully initialized with version OpenSSL 1.0.2k  26 Jan 2017
+Jul 28, 2017 12:03:26 PM org.apache.coyote.http11.Http11AprProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Jul 28, 2017 12:03:26 PM org.apache.coyote.ajp.AjpAprProtocol init
+INFO: Initializing Coyote AJP/1.3 on ajp-8009
+Jul 28, 2017 12:03:26 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 881 ms
+Jul 28, 2017 12:03:27 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Jul 28, 2017 12:03:27 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.53
+Jul 28, 2017 12:03:27 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Jul 28, 2017 12:03:27 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Jul 28, 2017 12:03:27 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive NextMessage.war
+Jul 28, 2017 12:03:42 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.2.12 using APR version 1.5.2.
+Jul 28, 2017 12:03:42 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+Jul 28, 2017 12:03:43 PM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFO: OpenSSL successfully initialized with version OpenSSL 1.0.2k  26 Jan 2017
+Jul 28, 2017 12:03:43 PM org.apache.coyote.http11.Http11AprProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Jul 28, 2017 12:03:43 PM org.apache.coyote.ajp.AjpAprProtocol init
+INFO: Initializing Coyote AJP/1.3 on ajp-8009
+Jul 28, 2017 12:03:43 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 904 ms
+Jul 28, 2017 12:03:43 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Jul 28, 2017 12:03:43 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.53
+Jul 28, 2017 12:03:43 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Jul 28, 2017 12:03:43 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Jul 28, 2017 12:03:43 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive NextMessage.war
+Jul 28, 2017 12:03:55 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Jul 28, 2017 12:03:55 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Jul 28, 2017 12:03:56 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Jul 28, 2017 12:03:56 PM org.apache.coyote.http11.Http11AprProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Jul 28, 2017 12:03:56 PM org.apache.coyote.ajp.AjpAprProtocol start
+INFO: Starting Coyote AJP/1.3 on ajp-8009
+Jul 28, 2017 12:03:56 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 12735 ms
+Jul 28, 2017 12:04:01 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.2.12 using APR version 1.5.2.
+Jul 28, 2017 12:04:01 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+Jul 28, 2017 12:04:01 PM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFO: OpenSSL successfully initialized with version OpenSSL 1.0.2k  26 Jan 2017
+Jul 28, 2017 12:04:02 PM org.apache.coyote.http11.Http11AprProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Jul 28, 2017 12:04:02 PM org.apache.coyote.ajp.AjpAprProtocol init
+INFO: Initializing Coyote AJP/1.3 on ajp-8009
+Jul 28, 2017 12:04:02 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 883 ms
+Jul 28, 2017 12:04:02 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Jul 28, 2017 12:04:02 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.53
+Jul 28, 2017 12:04:02 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Jul 28, 2017 12:04:02 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Jul 28, 2017 12:04:02 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive NextMessage.war
+Jul 28, 2017 12:04:08 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Jul 28, 2017 12:04:08 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Jul 28, 2017 12:04:08 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Jul 28, 2017 12:04:08 PM org.apache.coyote.http11.Http11AprProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Jul 28, 2017 12:04:08 PM org.apache.coyote.ajp.AjpAprProtocol start
+INFO: Starting Coyote AJP/1.3 on ajp-8009
+Jul 28, 2017 12:04:08 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 6831 ms
+Jul 28, 2017 12:04:33 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.2.12 using APR version 1.5.2.
+Jul 28, 2017 12:04:33 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+Jul 28, 2017 12:04:34 PM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFO: OpenSSL successfully initialized with version OpenSSL 1.0.2k  26 Jan 2017
+Jul 28, 2017 12:04:34 PM org.apache.coyote.http11.Http11AprProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Jul 28, 2017 12:04:34 PM org.apache.coyote.ajp.AjpAprProtocol init
+INFO: Initializing Coyote AJP/1.3 on ajp-8009
+Jul 28, 2017 12:04:34 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 853 ms
+Jul 28, 2017 12:04:34 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Jul 28, 2017 12:04:34 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.53
+Jul 28, 2017 12:04:34 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Jul 28, 2017 12:04:34 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Jul 28, 2017 12:04:34 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive NextMessage.war
+Jul 28, 2017 12:06:26 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.2.12 using APR version 1.5.2.
+Jul 28, 2017 12:06:26 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+Jul 28, 2017 12:06:26 PM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFO: OpenSSL successfully initialized with version OpenSSL 1.0.2k  26 Jan 2017
+Jul 28, 2017 12:06:26 PM org.apache.coyote.http11.Http11AprProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Jul 28, 2017 12:06:26 PM org.apache.coyote.ajp.AjpAprProtocol init
+INFO: Initializing Coyote AJP/1.3 on ajp-8009
+Jul 28, 2017 12:06:26 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 860 ms
+Jul 28, 2017 12:06:26 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Jul 28, 2017 12:06:26 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.53
+Jul 28, 2017 12:06:26 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Jul 28, 2017 12:06:26 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Jul 28, 2017 12:06:27 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive NextMessage.war
+Jul 28, 2017 12:06:31 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Jul 28, 2017 12:06:31 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Jul 28, 2017 12:06:31 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Jul 28, 2017 12:06:31 PM org.apache.coyote.http11.Http11AprProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Jul 28, 2017 12:06:31 PM org.apache.coyote.ajp.AjpAprProtocol start
+INFO: Starting Coyote AJP/1.3 on ajp-8009
+Jul 28, 2017 12:06:31 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 4549 ms
+Jul 28, 2017 12:14:16 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: Loaded APR based Apache Tomcat Native library 1.2.12 using APR version 1.5.2.
+Jul 28, 2017 12:14:16 PM org.apache.catalina.core.AprLifecycleListener init
+INFO: APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+Jul 28, 2017 12:14:16 PM org.apache.catalina.core.AprLifecycleListener initializeSSL
+INFO: OpenSSL successfully initialized with version OpenSSL 1.0.2k  26 Jan 2017
+Jul 28, 2017 12:14:16 PM org.apache.coyote.http11.Http11AprProtocol init
+INFO: Initializing Coyote HTTP/1.1 on http-8080
+Jul 28, 2017 12:14:16 PM org.apache.coyote.ajp.AjpAprProtocol init
+INFO: Initializing Coyote AJP/1.3 on ajp-8009
+Jul 28, 2017 12:14:16 PM org.apache.catalina.startup.Catalina load
+INFO: Initialization processed in 882 ms
+Jul 28, 2017 12:14:16 PM org.apache.catalina.core.StandardService start
+INFO: Starting service Catalina
+Jul 28, 2017 12:14:16 PM org.apache.catalina.core.StandardEngine start
+INFO: Starting Servlet Engine: Apache Tomcat/6.0.53
+Jul 28, 2017 12:14:16 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor host-manager.xml
+Jul 28, 2017 12:14:17 PM org.apache.catalina.startup.HostConfig deployDescriptor
+INFO: Deploying configuration descriptor manager.xml
+Jul 28, 2017 12:14:17 PM org.apache.catalina.startup.HostConfig deployWAR
+INFO: Deploying web application archive NextMessage.war
+Jul 28, 2017 12:14:29 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory docs
+Jul 28, 2017 12:14:29 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory examples
+Jul 28, 2017 12:14:30 PM org.apache.catalina.startup.HostConfig deployDirectory
+INFO: Deploying web application directory ROOT
+Jul 28, 2017 12:14:30 PM org.apache.coyote.http11.Http11AprProtocol start
+INFO: Starting Coyote HTTP/1.1 on http-8080
+Jul 28, 2017 12:14:30 PM org.apache.coyote.ajp.AjpAprProtocol start
+INFO: Starting Coyote AJP/1.3 on ajp-8009
+Jul 28, 2017 12:14:30 PM org.apache.catalina.startup.Catalina start
+INFO: Server startup in 13124 ms
