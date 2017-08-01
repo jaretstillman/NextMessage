@@ -7,7 +7,7 @@
     <display-name>NextMessage Application</display-name>
     <servlet>
         <servlet-name>NextMessage</servlet-name>
-        <servlet-class>js.nextmessage.classes.Servlet</servlet-class>
+        <servlet-class>js.nextmessage.servlet.Servlet</servlet-class>
 	<load-on-startup>1</load-on-startup>
     </servlet>
 

@@ -6,7 +6,7 @@ cd ..
 cd bin
 ./startup.sh
 
-sleep 3
+sleep 5
 
 cd ..
 cd webapps/NextMessage/WEB-INF/classes/js/nextmessage/resources
