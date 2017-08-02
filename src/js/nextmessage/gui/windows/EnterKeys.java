@@ -132,11 +132,6 @@ public class EnterKeys extends Windows
 					String at = textField_1.getText();
 					String ps = textField_2.getText();
 					
-					as = "AC397acdb2c3dbbbe45338f60f7fca3de3";
-					at = "55aa90b82d524dd1169da031d89a2861";
-					ps = "PN1fbcf767bdd3112ccb0c707b9596d5b2";
-					
-					
 					try
 					{
 						//Test whether keys are valid
