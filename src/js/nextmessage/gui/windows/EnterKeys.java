@@ -6,6 +6,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
@@ -77,11 +79,14 @@ public class EnterKeys extends Windows
 		lbl3.setBounds(208, 335, 130, 16);
 		panel.add(lbl3);
 		
-		JButton btn2 = new JButton("HELP");
-		btn2.setFont(new Font("Roboto", Font.PLAIN, 20));
-		btn2.setBackground(Color.decode("#FFC720"));
-		btn2.setForeground(Color.decode("#0b2040"));
-		btn2.setBounds(42, 467, 97, 25);
+		JButton btn2 = new JButton("<HTML><U>HELP</U></HTML>");
+		btn2.setFont(new Font("Roboto", Font.ITALIC, 30));
+		btn2.setBackground(Color.decode("#0b2040"));
+		btn2.setBorderPainted(false);
+		btn2.setFocusPainted(false);
+		btn2.setOpaque(false);
+		btn2.setForeground(Color.decode("#5BC4BF"));
+		btn2.setBounds(75, 450, 97, 30);
 		btn2.addActionListener(new ActionListener()
 		{
 			@Override
@@ -89,6 +94,26 @@ public class EnterKeys extends Windows
 			{
 				JOptionPane.showMessageDialog(panel, "To get ACCOUNT SID and AUTH TOKEN, go to https://www.twilio.com/console\n To get PHONE SID, go to https://www.twilio.com/console/phone-numbers/ and click on your phone number");
 			}	
+		});
+		btn2.addMouseListener(new MouseListener(){
+			@Override
+			public void mouseEntered(MouseEvent arg0)
+			{
+				btn2.setFont(new Font("Roboto Black", Font.ITALIC, 30));
+			}
+
+			@Override
+			public void mouseExited(MouseEvent arg0)
+			{
+				btn2.setFont(new Font("Roboto", Font.ITALIC, 30));				
+			}
+			
+			@Override
+			public void mousePressed(MouseEvent arg0) {}
+			@Override
+			public void mouseReleased(MouseEvent arg0) {}
+			@Override
+			public void mouseClicked(MouseEvent arg0){}
 		});
 		panel.add(btn2);
 		
@@ -106,6 +131,11 @@ public class EnterKeys extends Windows
 					String as = textField.getText();
 					String at = textField_1.getText();
 					String ps = textField_2.getText();
+					
+					as = "AC397acdb2c3dbbbe45338f60f7fca3de3";
+					at = "55aa90b82d524dd1169da031d89a2861";
+					ps = "PN1fbcf767bdd3112ccb0c707b9596d5b2";
+					
 					
 					try
 					{

@@ -32,16 +32,18 @@ import js.nextmessage.util.RunServerSwingWorker;
 * External Libraries/Resources used: Twilio/Twiml API, WindowBuilder, Apache Tomcat, Ngrok, JSoup
 * 
 * Author: Jaret Stillman (jrsstill@umich.edu)
-* Version: 2.0
+* Version: 2.1
 * Date: 8/1/17
 */
 
 public class Servlet extends HttpServlet
 {
 
-	private static final long serialVersionUID = 1L;
+	public static final String version = "2.1";
+	public static final String fileDirectory = "../";
 	
-	private String version = "2.0";
+	private static final long serialVersionUID = 1L;
+
 	public static HashMap<String, User> userMap; //Map of phoneNumbers to User structs
 	public static ArrayList<Investment> investments; //ArrayList of unique investments
 	
@@ -63,7 +65,7 @@ public class Servlet extends HttpServlet
 		print = new Print(userMap,investments);
 		
 		//Set output file
-		setOutput("../output.txt");
+		setOutput(fileDirectory + "output.txt");
 		
 		//Initialize GUI
 		initGUI();		
@@ -81,7 +83,7 @@ public class Servlet extends HttpServlet
 			}
 		}
 		
-		String fileName = getClass().getClassLoader().getResource("js/nextmessage/resources/number_to_company.csv").getPath();
+		String fileName = fileDirectory + "number_to_company.csv";
 		
 		//Assign numbers to each company
 		try
@@ -289,7 +291,7 @@ public class Servlet extends HttpServlet
 			public void run()
 			{
 				System.out.println("STARTING GUI");
-				gui = new GUI(version,print);
+				gui = new GUI(print);
 				gui.init();
 			}
 		};

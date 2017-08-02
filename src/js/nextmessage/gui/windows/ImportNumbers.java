@@ -1,6 +1,5 @@
 package js.nextmessage.gui.windows;
 
-import java.awt.Button;
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Font;
@@ -71,6 +70,7 @@ public class ImportNumbers extends Windows
 		plus.setFont(new Font("Roboto", Font.BOLD, 20));
 		plus.setBackground(Color.decode("#0B2040"));
 		plus.setForeground(Color.decode("#FFC720"));
+		plus.setFocusPainted(false);
 		p.add(plus);
 		plus.addActionListener(new ActionListener(){
 
@@ -83,8 +83,9 @@ public class ImportNumbers extends Windows
 		});
 		createLabelPrompt(labelX,inputX,buttonX,y,p,plus);
 		
-		Button btn2 = new Button("IMPORT");
+		JButton btn2 = new JButton("IMPORT");
 		btn2.setBounds(471, 450, 205, 45);
+		btn2.setFocusPainted(false);
 		btn2.setForeground(Color.decode("#0B2040"));
 		btn2.setBackground(Color.decode("#5BC4BF"));
 		btn2.setFont(new Font("Roboto", Font.BOLD, 20));

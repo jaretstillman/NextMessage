@@ -23,6 +23,7 @@ public class Substitute
 	private String ACCOUNT_SID;
 	private String AUTH_TOKEN;
 	private String PHONE_SID;
+	private String phoneNumber;
 	
 	/*
 	 * REQUIRES: as, at and ps are each valid for the Twilio Account, Ngrok is running

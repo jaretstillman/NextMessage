@@ -13,11 +13,15 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.twilio.Twilio;
+import com.twilio.rest.api.v2010.account.IncomingPhoneNumber;
+
 import js.nextmessage.gui.windows.EnterKeys;
 import js.nextmessage.gui.windows.ImportNumbers;
 import js.nextmessage.gui.windows.Start;
 import js.nextmessage.gui.windows.StartServer;
 import js.nextmessage.gui.windows.Windows;
+import js.nextmessage.servlet.Servlet;
 import js.nextmessage.util.Print;
 import js.nextmessage.util.RunServerSwingWorker;
 import js.nextmessage.util.Substitute;
@@ -41,9 +45,9 @@ public class GUI extends Frame
 	private RunServerSwingWorker<Boolean,String> worker;
 	
 	//Set up frame settings, initialize vars
-	public GUI(String version, Print print)
+	public GUI(Print print)
 	{
-		this.version = version;
+		this.version = Servlet.version;
 		this.print = print;
 		
 		setTitle("NextMessage v" + version);
@@ -93,7 +97,9 @@ public class GUI extends Frame
 				currentWindow = new ImportNumbers();
 				break;
 			case "StartServer":
-				currentWindow = new StartServer(print);
+				Twilio.init(AS, AT);
+				String phoneNumber = IncomingPhoneNumber.fetcher(PS).fetch().getFriendlyName();
+				currentWindow = new StartServer(print, phoneNumber);
 				break;
 			default:
 				System.out.println("Not a valid screen");
@@ -189,7 +195,7 @@ public class GUI extends Frame
 	 */
 	private void writeCSV(ArrayList<String> info) throws FileNotFoundException
 	{
-        File file = new File(getClass().getClassLoader().getResource("js/nextmessage/resources/number_to_company.csv").getPath());
+        File file = new File(Servlet.fileDirectory + "number_to_company.csv");
         PrintWriter pw = new PrintWriter(file.getPath());
         StringBuilder sb = new StringBuilder();
         
