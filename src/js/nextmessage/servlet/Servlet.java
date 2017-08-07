@@ -35,7 +35,7 @@ import js.nextmessage.util.RunServerSwingWorker;
 * 
 * Author: Jaret Stillman (jrsstill@umich.edu)
 * Version: 2.2
-* Date: 8/4/17
+* Date: 8/7/17
 */
 
 public class Servlet extends HttpServlet
