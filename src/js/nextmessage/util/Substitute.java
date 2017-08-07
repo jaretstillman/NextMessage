@@ -23,7 +23,6 @@ public class Substitute
 	private String ACCOUNT_SID;
 	private String AUTH_TOKEN;
 	private String PHONE_SID;
-	private String phoneNumber;
 	
 	/*
 	 * REQUIRES: as, at and ps are each valid for the Twilio Account, Ngrok is running
@@ -47,7 +46,7 @@ public class Substitute
 		Document doc;
 		try
 		{
-			doc = Jsoup.connect("http://localhost:4040").get();
+			doc = Jsoup.connect("http://localhost:4040/status").get();
 			System.out.println("CONNECTED TO LOCALHOST");
 		} 
 		catch (IOException e)
@@ -60,7 +59,7 @@ public class Substitute
 			if(elt.html().contains("ngrok.io"))
 			{
 				String s = elt.html();
-				String url = s.substring(s.indexOf("URL")+8,s.indexOf("ngrok.io")+8);
+				String url = s.substring(s.indexOf("\"URL")+9,s.indexOf("ngrok.io")+8);
 				return url;
 			}
 		}
@@ -79,7 +78,8 @@ public class Substitute
 			System.exit(0);
 		}
 		Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
-		IncomingPhoneNumber phoneNumber = IncomingPhoneNumber.updater(PHONE_SID).setSmsUrl(url).update();	
-		System.out.println("PHONE NUMBER ROUTING TO: " + phoneNumber.getSmsUrl());
+		IncomingPhoneNumber phoneNumber = IncomingPhoneNumber.updater(PHONE_SID).setSmsUrl(url + "/NextMessage").update();	
+		System.out.println("PHONE NUMBER ROUTING TO: " + phoneNumber.getSmsUrl() + "/NextMessage");
+		
 	}
 }

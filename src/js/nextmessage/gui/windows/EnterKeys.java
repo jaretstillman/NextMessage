@@ -34,6 +34,7 @@ public class EnterKeys extends Windows
 	public EnterKeys()
 	{
 		textField = new JTextField();
+		textField.grabFocus();
 		textField.setFont(new Font("Roboto", Font.PLAIN, 25));
 		textField.setBounds(350, 120, 500, 50);
 		panel.add(textField);
@@ -54,6 +55,7 @@ public class EnterKeys extends Windows
 		JButton btn1 = new JButton("Continue");
 		btn1.setFont(new Font("Roboto", Font.PLAIN, 30));
 		btn1.setBounds(500, 434, 200, 58);
+		btn1.setFocusPainted(false);
 		btn1.setBackground(Color.decode("#5BC4BF"));
 		btn1.setForeground(Color.decode("#0b2040"));
 		panel.add(btn1);

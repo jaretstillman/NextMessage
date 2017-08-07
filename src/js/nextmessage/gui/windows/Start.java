@@ -4,10 +4,16 @@ import java.awt.Color;
 import java.awt.Font;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
+import js.nextmessage.constants.Constants;
+import js.nextmessage.util.Recovery;
 
 /*
  * Description: This class sets up the "Start" window
@@ -70,6 +76,56 @@ public class Start extends Windows
 		JLabel logo = new JLabel(icon);
 		logo.setBounds(50,450,100,100);
 		panel.add(logo);
+		
+		
+		JButton btn2 = new JButton("<HTML><U>RECOVER LAST SESSION</U></HTML>");
+		btn2.setFont(new Font("Roboto", Font.ITALIC, 30));
+		btn2.setBackground(Color.decode("#0b2040"));
+		btn2.setBorderPainted(false);
+		btn2.setFocusPainted(false);
+		btn2.setOpaque(false);
+		btn2.setForeground(Color.decode("#FFC720"));
+		btn2.setBounds(400, 500, 400, 30);
+		btn2.addActionListener(new ActionListener()
+		{
+			@Override
+			public void actionPerformed(ActionEvent arg0)
+			{
+				try
+				{
+					Recovery.recoverUserData(Constants.AUTOSAVE_USER_FILE);
+					Recovery.recoverInvestmentData(Constants.AUTOSAVE_INVESTMENT_FILE);
+					JOptionPane.showMessageDialog(panel, "Last session recovered");
+					info.add("RECOVERED");
+				}
+				catch(Exception ex)
+				{
+					ex.printStackTrace();
+					JOptionPane.showMessageDialog(panel, "Could not recover data from last session");
+				}
+			}	
+		});
+		btn2.addMouseListener(new MouseListener(){
+			@Override
+			public void mouseEntered(MouseEvent arg0)
+			{
+				btn2.setFont(new Font("Roboto Black", Font.ITALIC, 30));
+			}
+
+			@Override
+			public void mouseExited(MouseEvent arg0)
+			{
+				btn2.setFont(new Font("Roboto", Font.ITALIC, 30));				
+			}
+			
+			@Override
+			public void mousePressed(MouseEvent arg0) {}
+			@Override
+			public void mouseReleased(MouseEvent arg0) {}
+			@Override
+			public void mouseClicked(MouseEvent arg0){}
+		});
+		panel.add(btn2);
 	}
 
 	/** Returns an ImageIcon, or null if the path was invalid. */

@@ -91,6 +91,7 @@ public class ImportNumbers extends Windows
 		btn2.setFont(new Font("Roboto", Font.BOLD, 20));
 		panel.add(btn2);
 		
+		textFields.get(0).grabFocus();
 		textFields.get(0).getDocument().addDocumentListener(new DocumentListener() //check first field
 		{
 			@Override
@@ -115,6 +116,7 @@ public class ImportNumbers extends Windows
 		
 		
 		sp.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_NEVER);
+		sp.getVerticalScrollBar().setUnitIncrement(20);
 		sp.setBounds(300,50,600,350);
 		panel.add(sp);
 		

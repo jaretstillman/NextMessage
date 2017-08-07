@@ -7,22 +7,22 @@ import java.awt.Frame;
 import java.awt.Toolkit;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
 import com.twilio.Twilio;
 import com.twilio.rest.api.v2010.account.IncomingPhoneNumber;
 
+import js.nextmessage.constants.Constants;
 import js.nextmessage.gui.windows.EnterKeys;
+import js.nextmessage.gui.windows.Finish;
 import js.nextmessage.gui.windows.ImportNumbers;
 import js.nextmessage.gui.windows.Start;
 import js.nextmessage.gui.windows.StartServer;
 import js.nextmessage.gui.windows.Windows;
-import js.nextmessage.servlet.Servlet;
-import js.nextmessage.util.Print;
+import js.nextmessage.statistics.Charts;
+import js.nextmessage.statistics.Print;
+import js.nextmessage.statistics.Reports;
 import js.nextmessage.util.RunServerSwingWorker;
 import js.nextmessage.util.Substitute;
 
@@ -39,16 +39,13 @@ public class GUI extends Frame
 	private Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
 	private boolean fileUpdated = false;
 	private String version;
-	private Print print;
 	private Windows currentWindow;
-	private String AS,AT,PS;
 	private RunServerSwingWorker<Boolean,String> worker;
 	
 	//Set up frame settings, initialize vars
-	public GUI(Print print)
+	public GUI()
 	{
-		this.version = Servlet.version;
-		this.print = print;
+		this.version = Constants.VERSION;
 		
 		setTitle("NextMessage v" + version);
 		setResizable(false);
@@ -62,9 +59,19 @@ public class GUI extends Frame
             @Override
             public void windowClosing(WindowEvent we) 
             {
-                System.exit(0);
+            	try
+				{
+					Print.printAutoSaveUserList(Constants.FILE_DIRECTORY + Constants.AUTOSAVE_USER_FILE);
+	            	Print.printAutoSaveInvestmentList(Constants.FILE_DIRECTORY + Constants.AUTOSAVE_INVESTMENT_FILE);
+				}
+            	catch (Exception e)
+				{
+					e.printStackTrace();
+				}
+            	System.exit(0);
             }
-        } );
+        });
+        
 		pack();
 		setVisible(true);
 
@@ -94,12 +101,23 @@ public class GUI extends Frame
 				currentWindow = new EnterKeys();
 				break;
 			case "ImportNumbers":
+				if(fileUpdated)
+				{
+					//if session has already been recovered, then skip this step
+					switchScreen("StartServer");
+					return;
+				}
 				currentWindow = new ImportNumbers();
 				break;
 			case "StartServer":
-				Twilio.init(AS, AT);
-				String phoneNumber = IncomingPhoneNumber.fetcher(PS).fetch().getFriendlyName();
-				currentWindow = new StartServer(print, phoneNumber);
+				Twilio.init(Constants.ACCOUNT_SID, Constants.AUTH_TOKEN);
+				IncomingPhoneNumber phoneNumber = IncomingPhoneNumber.fetcher(Constants.PHONE_SID).fetch();
+				String pN = phoneNumber.getFriendlyName();
+				Constants.PHONE_NUMBER = phoneNumber.getPhoneNumber().toString();
+				currentWindow = new StartServer(pN);
+				break;
+			case "Finish":
+				currentWindow = new Finish();
 				break;
 			default:
 				System.out.println("Not a valid screen");
@@ -109,7 +127,7 @@ public class GUI extends Frame
 		add(currentWindow.getPanel(),"Center");
 		while(currentWindow.getNext()==null)
 		{
-			if(screen.equals("StartServer")) //Creates the SwingWorker for Servlet.service() to publish to
+			if(screen.equals("StartServer")) //Creates the SwingWorker for Constants.service() to publish to
 			{	
 				worker = new RunServerSwingWorker<Boolean,String>()
 				{
@@ -151,21 +169,26 @@ public class GUI extends Frame
 		switch (s)
 		{
 			case "Start":
+				if(!info.isEmpty())
+				{
+					fileUpdated = true;
+				}
 				break;
 			case "EnterKeys":
-				AS = info.get(0);
-				AT = info.get(1);
-				PS = info.get(2);
+				Constants.ACCOUNT_SID = info.get(0);
+				Constants.AUTH_TOKEN = info.get(1);
+				Constants.PHONE_SID = info.get(2);
 				
 				//Connect Twilio to Tomcat Server through Ngrok
 				Substitute sub = new Substitute();
-				sub.substitute(AS, AT, PS);
+				sub.substitute(Constants.ACCOUNT_SID, Constants.AUTH_TOKEN, Constants.PHONE_SID);
 				
 				break;
 			case "ImportNumbers":
 				try
 				{
-					writeCSV(info);
+					Print.writeNumberMap(Constants.FILE_DIRECTORY + Constants.NUMBERMAP_FILE, info);
+				    System.out.println("COMPANIES IMPORTED");
 				}
 				catch(Exception e)
 				{
@@ -175,6 +198,24 @@ public class GUI extends Frame
 				fileUpdated = true;
 				break;
 			case "StartServer":
+				try
+				{
+					Print.printAutoSaveUserList(Constants.AUTOSAVE_USER_FILE);
+					Print.printAutoSaveInvestmentList(Constants.AUTOSAVE_INVESTMENT_FILE);
+					Print.printUserList(Constants.USER_LIST_CSV);
+					Print.printInvestmentList(Constants.INVESTMENT_LIST_CSV);
+					Reports.generateInvestorReport(Constants.USER_REPORT_FILE);
+					Reports.generateFundingByCompanyReport(Constants.FUNDING_REPORT_FILE);
+					Reports.generateFundingByCompanyDividedReport(Constants.FUNDING_REPORT_DIV_FILE);
+					Charts.generateFundingByCompanyChart(Constants.FUNDING_CHART_FILE, false);
+					Charts.generateFundingByCompanyDividedChart(Constants.FUNDING_CHART_DIV_FILE, false);
+				}
+				catch(Exception ex)
+				{
+					ex.printStackTrace();
+				}
+				break;
+			case "Finish":
 				System.exit(0);
 				break;
 			default:
@@ -186,38 +227,6 @@ public class GUI extends Frame
 	public boolean getFileUpdated()
 	{
 		return fileUpdated;
-	}
-	
-	/*
-	 * REQUIRES: number_to_company.csv exists in resources folder
-	 * MODIFIES: number_to_company.csv
-	 * EFFECTS: Writes companies to number_to_company.csv
-	 */
-	private void writeCSV(ArrayList<String> info) throws FileNotFoundException
-	{
-        File file = new File(Servlet.fileDirectory + "number_to_company.csv");
-        PrintWriter pw = new PrintWriter(file.getPath());
-        StringBuilder sb = new StringBuilder();
-        
-        sb.append("ID");
-        sb.append(',');
-        sb.append("COMPANY");
-        sb.append('\n');
-        
-		for(int i = 0; i<info.size(); i++)
-		{
-			
-	        sb.append(new Integer(i+1).toString());
-	        sb.append(',');
-	        sb.append(info.get(i));
-	        sb.append('\n');
-		}
-	       
-		pw.write(sb.toString());
-	    pw.close();
-	    pw.flush();
-	    
-	    System.out.println("COMPANIES IMPORTED");
 	}
 	
 	public RunServerSwingWorker<Boolean, String> getSwingWorker()
