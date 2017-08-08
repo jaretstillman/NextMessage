@@ -78,8 +78,8 @@ public class Substitute
 			System.exit(0);
 		}
 		Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
-		IncomingPhoneNumber phoneNumber = IncomingPhoneNumber.updater(PHONE_SID).setSmsUrl(url + "/NextMessage").update();	
-		System.out.println("PHONE NUMBER ROUTING TO: " + phoneNumber.getSmsUrl() + "/NextMessage");
+		IncomingPhoneNumber phoneNumber = IncomingPhoneNumber.updater(PHONE_SID).setSmsUrl(url + "/NextMessage-Project").update();	
+		System.out.println("PHONE NUMBER ROUTING TO: " + phoneNumber.getSmsUrl());
 		
 	}
 }
