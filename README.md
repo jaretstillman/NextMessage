@@ -7,7 +7,7 @@ For Windows users:
 2. Download the repository as a .zip file
 3. Extract the .zip file
 4. Go into NextMessage - Master
-5. Run windows_start_server.exe
+5. Run windows_start_server.bat
 
 For OSX/Linux Users (Note: still in development)
 1. Make sure Java is downloaded and installed
