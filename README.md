@@ -15,5 +15,5 @@ For OSX/Linux Users (Note: still in development)
 2. Download the repository as a .zip file
 3. Navigate to the directory with the terminal and unzip the folder
 3. Navigate into NextMessage - Master
-4. Enter "chmod +x osx*" in the terminal
-4. Run osx_start_server.command with "./osx*"
+4. Enter "chmod +x ./osx*" or "chmod +x ./linux*" in the terminal depending on your operating system
+4. Run .command file with "./osx*" or "./linux*" depending on your OS
