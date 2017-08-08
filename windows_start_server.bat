@@ -3,6 +3,14 @@
 java -version
 if %errorlevel% neq 0 goto :error
 
+for /f "tokens=3" %%g in ('java -version 2^>^&1 ^| findstr /i "version"') do (
+    set JAVAVER=%%g
+)
+set JAVAVER=%JAVAVER:"=%
+
+set JRE_HOME=C:\Program Files\Java\jre%JAVAVER%
+set PATH=%PATH%;%JRE_HOME%\bin;
+
 cd webapps
 @RD /s /q NextMessage
 cd ..
