@@ -6,7 +6,7 @@ For Windows users:
 1. Make sure Java is downloaded, and the appropriate environment variables are set (https://www.tutorialspoint.com/java/java_environment_setup.htm)
 2. Download the repository as a .zip file
 3. Extract the .zip file
-4. Open NEXTMESSAGE_SERVER
+4. Open NEXTMESSAGE_SERVER in NextMessage - Master
 5. Run windows_start_server.exe
 
 For OSX/Linux Users (Note: still in development)
