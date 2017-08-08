@@ -179,10 +179,6 @@ public class GUI extends Frame
 				Constants.AUTH_TOKEN = info.get(1);
 				Constants.PHONE_SID = info.get(2);
 				
-				//Connect Twilio to Tomcat Server through Ngrok
-				Substitute sub = new Substitute();
-				sub.substitute(Constants.ACCOUNT_SID, Constants.AUTH_TOKEN, Constants.PHONE_SID);
-				
 				break;
 			case "ImportNumbers":
 				try

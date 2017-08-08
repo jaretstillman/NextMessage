@@ -34,7 +34,7 @@ import js.nextmessage.util.RunServerSwingWorker;
 * External Libraries/Resources used: Twilio/Twiml API, WindowBuilder, Apache Tomcat, Ngrok, JSoup, JFreeChart
 * 
 * Author: Jaret Stillman (jrsstill@umich.edu)
-* Version: 2.2.1
+* Version: 2.3
 * Date: 8/8/17
 */
 

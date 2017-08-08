@@ -18,6 +18,10 @@ import javax.swing.SwingConstants;
 import com.twilio.Twilio;
 import com.twilio.rest.api.v2010.account.IncomingPhoneNumber;
 
+import js.nextmessage.constants.Constants;
+import js.nextmessage.exceptions.NgrokNotConfiguredException;
+import js.nextmessage.util.Substitute;
+
 /*
  * Description: This class sets up the "EnterKeys" window
  * 
@@ -136,16 +140,19 @@ public class EnterKeys extends Windows
 					
 					try
 					{
-						//Test whether keys are valid
-						Twilio.init(as, at);
-						Twilio.getRestClient().getAccountSid();
-						IncomingPhoneNumber in = IncomingPhoneNumber.updater(ps).update();
-						in.getAccountSid();
-						
+						//Connect Twilio to Tomcat Server through Ngrok
+						Substitute sub = new Substitute();
+						sub.substitute(as, at, ps);
+
 						info.add(as);
 						info.add(at);
 						info.add(ps);
+						
 						next = "ImportNumbers";
+					}
+					catch(NgrokNotConfiguredException ex)
+					{
+						JOptionPane.showMessageDialog(panel, "Those keys are correct, but Ngrok is not configured correctly.\nCheck your internet connection, or try restarting the app.");
 					}
 					catch(Exception ex)
 					{

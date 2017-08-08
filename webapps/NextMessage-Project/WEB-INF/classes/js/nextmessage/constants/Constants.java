@@ -8,13 +8,19 @@ import js.nextmessage.structs.Investment;
 import js.nextmessage.structs.User;
 import js.nextmessage.util.NumberMap;
 
+/*
+ * Description: Constants to be shared across the entire program
+ * 
+ * Author: Jaret Stillman (jrsstill@umich.edu)
+ */
+
 public class Constants
 {
 	public static HashMap<String, User> USERMAP; //Map of phoneNumbers to User structs
 	public static ArrayList<Investment> INVESTMENTS; //ArrayList of unique investments
 	public static NumberMap NUMBERMAP; //Map of numbers to companies
 	
-	public static final String VERSION = "2.2.1";
+	public static final String VERSION = "2.3";
 	public static final String FILE_DIRECTORY = "../REPORTS/";
 	public static final double PRINCIPLE_AMOUNT = 1000.0;
 	public static final DecimalFormat df = new DecimalFormat("#0.00");

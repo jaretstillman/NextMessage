@@ -150,15 +150,15 @@ public class StartServer extends Windows
 		lbl4.setForeground(Color.decode("#5BC4BF"));
 		panel.add(lbl4);
 
-		JButton btn2 = new JButton("<HTML><U>SEND A MESSAGE TO ALL USERS</U></HTML>");
+		JButton btn2 = new JButton("<HTML><U><CENTER>SEND A MESSAGE TO ALL USERS</CENTER></U></HTML>");
 		btn2.setFont(new Font("Roboto", Font.ITALIC, 20));
 		btn2.setForeground(Color.decode("#FFC720"));
 		btn2.setBorderPainted(false);
 		btn2.setFocusPainted(false);
 		btn2.setOpaque(false);
 		btn2.setBackground(Color.decode("#0b2040"));
-		btn2.setHorizontalTextPosition(SwingConstants.CENTER);
-		btn2.setBounds(75, 490, 200, 50);
+		btn2.setHorizontalAlignment(SwingConstants.CENTER);
+		btn2.setBounds(50, 490, 300, 50);
 		btn2.addActionListener(new ActionListener()
 		{
 			@Override

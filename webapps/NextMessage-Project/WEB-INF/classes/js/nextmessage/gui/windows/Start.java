@@ -85,7 +85,7 @@ public class Start extends Windows
 		btn2.setFocusPainted(false);
 		btn2.setOpaque(false);
 		btn2.setForeground(Color.decode("#FFC720"));
-		btn2.setBounds(400, 500, 400, 30);
+		btn2.setBounds(375, 500, 450, 30);
 		btn2.addActionListener(new ActionListener()
 		{
 			@Override

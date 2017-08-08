@@ -10,6 +10,8 @@ import org.jsoup.select.Elements;
 import com.twilio.Twilio;
 import com.twilio.rest.api.v2010.account.IncomingPhoneNumber;
 
+import js.nextmessage.exceptions.NgrokNotConfiguredException;
+
 /*
  * Description: This class connects the ngrok url to the Twilio account, 
  * 		opening a temporary port from your computer to the internet and routing it through
@@ -29,7 +31,7 @@ public class Substitute
 	 * MODIFIES: Twilio account phone number information
 	 * EFFECTS: See class description
 	 */
-	public void substitute(String as, String at, String ps)
+	public void substitute(String as, String at, String ps) throws NgrokNotConfiguredException
 	{
 		ACCOUNT_SID = as;
 		AUTH_TOKEN = at;
@@ -70,12 +72,12 @@ public class Substitute
 	 * REQUIRES: url is a valid ngrok url
 	 * EFFECTS: Sets phone sms link to ngrok url
 	 */
-	public void changeSettings(String url)
+	public void changeSettings(String url) throws NgrokNotConfiguredException
 	{
 		if(url == null)
 		{
 			System.out.println("NGROK NOT INITIATED PROPERLY");
-			System.exit(0);
+			throw new NgrokNotConfiguredException();
 		}
 		Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
 		IncomingPhoneNumber phoneNumber = IncomingPhoneNumber.updater(PHONE_SID).setSmsUrl(url + "/NextMessage-Project").update();	
