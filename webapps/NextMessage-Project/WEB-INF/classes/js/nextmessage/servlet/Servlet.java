@@ -123,8 +123,6 @@ public class Servlet extends HttpServlet
 			user.setPhoneNumber(phoneNumber);
 		}
 		
-		int count = user.getNumTimesContacted();
-		
 		String outMsg = " ";
 		String inMsg = request.getParameter("Body");
 		inMsg = removeTrailingSpaces(inMsg);
@@ -132,7 +130,7 @@ public class Servlet extends HttpServlet
 		//Switch the response based on inMsg and numTimesContacted
 		try
 		{
-			switch (user.getNumTimesContacted())
+			switch (user.getStage())
 			{
 				case 0:
 					try
@@ -140,10 +138,10 @@ public class Servlet extends HttpServlet
 						user.setName(inMsg);
 						outMsg = "Hi " + user.getFirst()
 								+ ", thanks for attending Talent Tech NEXT. Let's get you set up with your investment funds. First, what's the name of your company?";
+						user.setStage(1);
 					} 
 					catch (InvalidNameException e)
 					{
-						count--;
 						outMsg = "Woops, we couldn't recognize that name. Try entering your name as FIRST LAST i.e. John Smith";
 					}
 					break;
@@ -156,6 +154,7 @@ public class Servlet extends HttpServlet
 							+ "(c) Small Business (0-100 employees)\n" 
 							+ "(d) Staffing Agency\n"
 							+ "(e) Investor";
+					user.setStage(2);
 					break;
 				case 2:
 					inMsg = inMsg.toLowerCase();
@@ -168,10 +167,10 @@ public class Servlet extends HttpServlet
 								+ "! We've put $" + Constants.df.format(round(Constants.PRINCIPLE_AMOUNT,0)) + " TTL Dollars in your account. As a reminder this is play money and you will never be charged for this experience. When you get to demo alley you'll see a sign on each company's table with a company number. Text the investment amount to the company's number.\n Ex. $100 to 1 or $200 to 3.\nYou can distribute your funds however you like." +
 								"\n\n\nType \"Companies\" to see the full list of companies with their assigned numbers";
 						user.setRegistered(true);
+						user.setStage(3);
 					} 
 					else
 					{
-						count--;
 						outMsg = "Please text a letter A-E";
 					}
 					break;
@@ -280,12 +279,8 @@ public class Servlet extends HttpServlet
 		} 
 		catch (Exception e) //NullPointerException most likely
 		{
-			count--;
 			outMsg = "Error Detected, Please Try Again";
 		}
-		
-		count++;
-		user.setNumTimesContacted(count); //Update numTimesContacted
 		
 		Body body = new Body(outMsg);
 		Message message = new Message.Builder().body(body).build();

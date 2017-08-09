@@ -92,12 +92,12 @@ public class Print
 		File file = new File(fileName);
 		PrintWriter pw = new PrintWriter(file.getPath());
 		StringBuilder sb = new StringBuilder();
-		sb.append("NAME,PHONE_NUMBER,COMPANY,COMPANY_TYPE,AMOUNT,NUM_TIMES_CONTACTED,REGISTERED,CAN_UNDO,LAST_INVESTMENT\n");
+		sb.append("NAME,PHONE_NUMBER,COMPANY,COMPANY_TYPE,AMOUNT,STAGE,REGISTERED,CAN_UNDO,LAST_INVESTMENT\n");
 		
 		for(User user: Constants.USERMAP.values())
 		{
 			sb.append(user.getName() + "," + user.getPhoneNumber() + "," + user.getCompany() 
-			+ "," + user.getCompanyType() + "," + user.getAmount() + "," + user.getNumTimesContacted() 
+			+ "," + user.getCompanyType() + "," + user.getAmount() + "," + user.getStage() 
 			+ "," + user.getRegistered() + "," + user.getCanUndo() + "," + user.getLastInvestment() + "\n");
 		}
 		

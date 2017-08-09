@@ -15,10 +15,6 @@ import javax.swing.JOptionPane;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 
-import com.twilio.Twilio;
-import com.twilio.rest.api.v2010.account.IncomingPhoneNumber;
-
-import js.nextmessage.constants.Constants;
 import js.nextmessage.exceptions.NgrokNotConfiguredException;
 import js.nextmessage.util.Substitute;
 

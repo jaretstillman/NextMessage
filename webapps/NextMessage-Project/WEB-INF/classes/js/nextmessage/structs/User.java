@@ -16,7 +16,7 @@ public class User
 	private String company;
 	private String companyType;
 	private double amount;
-	private int numTimesContacted;
+	private int stage;
 	private boolean registered;
 	private boolean canUndo;
 	private double lastInvestment;
@@ -29,20 +29,20 @@ public class User
 		company = "Null";
 		companyType = "Null";
 		amount = 0;
-		numTimesContacted = 0;
+		stage = 0;
 		lastInvestment = 0;
 		canUndo = false;
 		registered = false;
 	}
 	
-	public User(String name, String phoneNumber, String company, String companyType, double amount, int numTimesContacted, boolean registered, boolean canUndo, double lastInvestment) throws InvalidNameException
+	public User(String name, String phoneNumber, String company, String companyType, double amount, int stage, boolean registered, boolean canUndo, double lastInvestment) throws InvalidNameException
 	{
 		this.setName(name);
 		this.setPhoneNumber(phoneNumber);
 		this.setCompany(company);
 		this.setCompanyType(companyType);
 		this.setAmount(amount);
-		this.setNumTimesContacted(numTimesContacted);
+		this.stage = stage;
 		this.setRegistered(registered);
 		this.setCanUndo(canUndo);
 		this.setLastInvestment(lastInvestment);
@@ -119,15 +119,15 @@ public class User
 	}
 
 
-	public int getNumTimesContacted() 
+	public int getStage() 
 	{
-		return numTimesContacted;
+		return stage;
 	}
 
 
-	public void setNumTimesContacted(int numTimesContacted) 
+	public void setStage(int stage) 
 	{
-		this.numTimesContacted = numTimesContacted;
+		this.stage = stage;
 	}
 
 	public boolean getRegistered()

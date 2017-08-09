@@ -24,7 +24,6 @@ import js.nextmessage.statistics.Charts;
 import js.nextmessage.statistics.Print;
 import js.nextmessage.statistics.Reports;
 import js.nextmessage.util.RunServerSwingWorker;
-import js.nextmessage.util.Substitute;
 
 
 /*
@@ -61,8 +60,8 @@ public class GUI extends Frame
             {
             	try
 				{
-					Print.printAutoSaveUserList(Constants.FILE_DIRECTORY + Constants.AUTOSAVE_USER_FILE);
-	            	Print.printAutoSaveInvestmentList(Constants.FILE_DIRECTORY + Constants.AUTOSAVE_INVESTMENT_FILE);
+					Print.printAutoSaveUserList(Constants.AUTOSAVE_USER_FILE);
+	            	Print.printAutoSaveInvestmentList(Constants.AUTOSAVE_INVESTMENT_FILE);
 				}
             	catch (Exception e)
 				{
@@ -183,7 +182,7 @@ public class GUI extends Frame
 			case "ImportNumbers":
 				try
 				{
-					Print.writeNumberMap(Constants.FILE_DIRECTORY + Constants.NUMBERMAP_FILE, info);
+					Print.writeNumberMap(Constants.NUMBERMAP_FILE, info);
 				    System.out.println("COMPANIES IMPORTED");
 				}
 				catch(Exception e)
