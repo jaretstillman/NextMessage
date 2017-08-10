@@ -35,7 +35,7 @@ import js.nextmessage.util.RunServerSwingWorker;
 * 
 * Author: Jaret Stillman (jrsstill@umich.edu)
 * Version: 2.3
-* Date: 8/8/17
+* Date: 8/10/17
 */
 
 public class Servlet extends HttpServlet
@@ -132,20 +132,20 @@ public class Servlet extends HttpServlet
 		{
 			switch (user.getStage())
 			{
-				case 0:
+				case User.STAGE_GET_NAME:
 					try
 					{
 						user.setName(inMsg);
 						outMsg = "Hi " + user.getFirst()
 								+ ", thanks for attending Talent Tech NEXT. Let's get you set up with your investment funds. First, what's the name of your company?";
-						user.setStage(1);
+						user.setStage(User.STAGE_GET_COMPANY);
 					} 
 					catch (InvalidNameException e)
 					{
 						outMsg = "Woops, we couldn't recognize that name. Try entering your name as FIRST LAST i.e. John Smith";
 					}
 					break;
-				case 1:
+				case User.STAGE_GET_COMPANY:
 					user.setCompany(inMsg);
 					outMsg = "Thanks " + user.getFirst() + "! Which of the following categories does "
 							+ user.getCompany() + " fit into (reply back with letter)?\n\n"
@@ -154,9 +154,9 @@ public class Servlet extends HttpServlet
 							+ "(c) Small Business (0-100 employees)\n" 
 							+ "(d) Staffing Agency\n"
 							+ "(e) Investor";
-					user.setStage(2);
+					user.setStage(User.STAGE_GET_COMPANY_TYPE);
 					break;
-				case 2:
+				case User.STAGE_GET_COMPANY_TYPE:
 					inMsg = inMsg.toLowerCase();
 					if (inMsg.equals("a") || inMsg.equals("b") || inMsg.equals("c") || inMsg.equals("d") || inMsg.equals("e"))
 					{
@@ -164,10 +164,10 @@ public class Servlet extends HttpServlet
 						user.setCompanyType(type);
 						user.setAmount(Constants.PRINCIPLE_AMOUNT);
 						outMsg = "Great, thanks for that " + user.getFirst()
-								+ "! We've put $" + Constants.df.format(round(Constants.PRINCIPLE_AMOUNT,0)) + " TTL Dollars in your account. As a reminder this is play money and you will never be charged for this experience. When you get to demo alley you'll see a sign on each company's table with a company number. Text the investment amount to the company's number.\n Ex. $100 to 1 or $200 to 3.\nYou can distribute your funds however you like." +
+								+ "! We've put $" + Constants.df.format(round(Constants.PRINCIPLE_AMOUNT,0)) + " NextBucks in your account. As a reminder this is play money and you will never be charged for this experience. When you get to demo alley you'll see a sign on each company's table with a company number. Text the investment amount to the company's number.\n Ex. $100 to 1 or $200 to 3.\nYou can distribute your funds however you like." +
 								"\n\n\nType \"Companies\" to see the full list of companies with their assigned numbers";
 						user.setRegistered(true);
-						user.setStage(3);
+						user.setStage(User.STAGE_INVEST);
 					} 
 					else
 					{

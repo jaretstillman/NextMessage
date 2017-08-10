@@ -33,7 +33,7 @@ public class Print
 		for(User user: Constants.USERMAP.values())
 		{
 			double amt = user.getRegistered() ? user.getAmount() : Constants.PRINCIPLE_AMOUNT; //if user is not registered, they have spent 0 money
-			sb.append(user.getName() + "," + user.getPhoneNumber() + "," + user.getCompany() 
+			sb.append(user.getName().replace(",", "") + "," + user.getPhoneNumber() + "," + user.getCompany().replace(",", "") 
 			+ "," + user.getCompanyType() + "," + (Constants.PRINCIPLE_AMOUNT-amt) + "\n");
 		}
 		
@@ -54,8 +54,8 @@ public class Print
 		sb.append("NAME,PHONE_NUMBER,USER_COMPANY,USER_COMPANY_TYPE,AMOUNT_INVESTED,COMPANY_INVESTED_IN\n");
 		for(Investment inv : Constants.INVESTMENTS)
 		{
-			sb.append(inv.getUser().getName() + "," + inv.getUser().getPhoneNumber() + "," + inv.getUser().getCompany() 
-			+ "," + inv.getUser().getCompanyType() + "," + inv.getAmt() + "," + inv.getCompany() + "\n");
+			sb.append(inv.getUser().getName().replace(",", "") + "," + inv.getUser().getPhoneNumber() + "," + inv.getUser().getCompany().replace(",", "")
+			+ "," + inv.getUser().getCompanyType() + "," + inv.getAmt() + "," + inv.getCompany().replace(",", "") + "\n");
 		}
 		
 		pw.write(sb.toString());
@@ -75,7 +75,7 @@ public class Print
 		sb.append("PHONE_NUMBER,AMOUNT_INVESTED,COMPANY_INVESTED_IN\n");
 		for(Investment inv : Constants.INVESTMENTS)
 		{
-			sb.append(inv.getUser().getPhoneNumber() + "," + inv.getAmt() + "," + inv.getCompany() + "\n");
+			sb.append(inv.getUser().getPhoneNumber() + "," + inv.getAmt() + "," + inv.getCompany().replace(",", "") + "\n");
 		}
 		
 		pw.write(sb.toString());
@@ -96,7 +96,7 @@ public class Print
 		
 		for(User user: Constants.USERMAP.values())
 		{
-			sb.append(user.getName() + "," + user.getPhoneNumber() + "," + user.getCompany() 
+			sb.append(user.getName().replace(",", "") + "," + user.getPhoneNumber() + "," + user.getCompany().replace(",", "") 
 			+ "," + user.getCompanyType() + "," + user.getAmount() + "," + user.getStage() 
 			+ "," + user.getRegistered() + "," + user.getCanUndo() + "," + user.getLastInvestment() + "\n");
 		}
@@ -126,7 +126,7 @@ public class Print
 			
 	        sb.append(new Integer(i+1).toString());
 	        sb.append(',');
-	        sb.append(info.get(i));
+	        sb.append(info.get(i).replace(",", ""));
 	        sb.append('\n');
 		}
 	       

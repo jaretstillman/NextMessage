@@ -21,6 +21,11 @@ public class User
 	private boolean canUndo;
 	private double lastInvestment;
 	
+	public static final int STAGE_GET_NAME = 0;
+	public static final int STAGE_GET_COMPANY = 1;
+	public static final int STAGE_GET_COMPANY_TYPE = 2;
+	public static final int STAGE_INVEST = 3;
+	
 	public User()
 	{
 		first = "Null";
@@ -29,7 +34,7 @@ public class User
 		company = "Null";
 		companyType = "Null";
 		amount = 0;
-		stage = 0;
+		stage = STAGE_GET_NAME;
 		lastInvestment = 0;
 		canUndo = false;
 		registered = false;
