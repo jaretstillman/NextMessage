@@ -7,6 +7,11 @@ if ! [ -x "$(command -v java)" ]; then
 	exit 1
 fi
 
+if [ -z "$(fc-list | grep -i "roboto" > /dev/null)" ]; then
+	echo Installing Roboto...
+	cp webapps/NextMessage-Project/WEB-INF/classes/js/nextmessage/resources/*.ttf /Library/Fonts
+fi
+
 cd /
 cd ${0%/*}
 
