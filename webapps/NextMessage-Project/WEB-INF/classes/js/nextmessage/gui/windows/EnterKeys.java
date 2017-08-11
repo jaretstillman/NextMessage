@@ -162,7 +162,7 @@ public class EnterKeys extends Windows
 		JLabel lbl4 = new JLabel("Please Enter Account Keys");
 		lbl4.setForeground(Color.decode("#FFC720"));
 		lbl4.setFont(new Font("Roboto Black", Font.PLAIN, 25));
-		lbl4.setBounds(445, 45, 310, 42);
+		lbl4.setBounds(415, 45, 340, 42);
 		panel.add(lbl4);
 		
 		textField.setFocusTraversalKeysEnabled(false);
