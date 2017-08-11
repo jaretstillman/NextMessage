@@ -46,7 +46,7 @@ cd ..
 cd bin
 call startup.bat
 
-ping -n 7 127.0.0.1 > nul
+ping -n 10 127.0.0.1 > nul
 cd ..
 @echo on
 cd webapps/NextMessage-Project/WEB-INF/classes/js/nextmessage/resources

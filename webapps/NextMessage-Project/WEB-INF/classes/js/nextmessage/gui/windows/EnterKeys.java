@@ -64,21 +64,21 @@ public class EnterKeys extends Windows
 		lbl1.setHorizontalAlignment(SwingConstants.CENTER);
 		lbl1.setForeground(Color.decode("#FFC720"));
 		lbl1.setFont(new Font("Roboto", Font.BOLD, 20));
-		lbl1.setBounds(181, 135, 157, 16);
+		lbl1.setBounds(151, 135, 187, 16);
 		panel.add(lbl1);
 		
 		JLabel lbl2 = new JLabel("AUTH TOKEN: ");
 		lbl2.setHorizontalAlignment(SwingConstants.CENTER);
 		lbl2.setForeground(Color.decode("#FFC720"));
 		lbl2.setFont(new Font("Roboto", Font.BOLD, 20));
-		lbl2.setBounds(190, 235, 148, 16);
+		lbl2.setBounds(160, 235, 178, 16);
 		panel.add(lbl2);
 		
 		JLabel lbl3 = new JLabel("PHONE_SID: ");
 		lbl3.setHorizontalAlignment(SwingConstants.CENTER);
 		lbl3.setForeground(Color.decode("#FFC720"));
 		lbl3.setFont(new Font("Roboto", Font.BOLD, 20));
-		lbl3.setBounds(208, 335, 130, 16);
+		lbl3.setBounds(178, 335, 160, 16);
 		panel.add(lbl3);
 		
 		JButton btn2 = new JButton("<HTML><U>HELP</U></HTML>");

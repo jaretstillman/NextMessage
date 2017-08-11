@@ -15,11 +15,16 @@ if [ ! -f ./Roboto-Regular.ttf ]; then
 fi
 
 cd $d
-export JAVA_HOME=/Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/
+
+if [ -d /Library/Java/Home ]; then
+	export JAVA_HOME=/Library/Java/Home
+else
+	export JAVA_HOME=/Library/Internet\ Plug-Ins/JavaAppletPlugin.plugin/Contents/Home/
+fi
 
 cd bin
 ./startup.sh
 
-sleep 7
+sleep 10
 cd ../webapps/NextMessage-Project/WEB-INF/classes/js/nextmessage/resources
 ./ngrok_osx http 8080

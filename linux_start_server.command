@@ -11,7 +11,7 @@ cd bin
 chmod +x *.sh
 ./catalina.sh start
 
-sleep 7
+sleep 10
 
 cd ..
 cd webapps/NextMessage-Project/WEB-INF/classes/js/nextmessage/resources
