@@ -10,7 +10,8 @@ For Windows users:
 4. Go into NextMessage - Master
 5. Run windows_start_server.bat (right-click, Run As Administrator)
 
-For OSX/Linux Users (Note: still in development)
+For OSX/Linux Users:
+
 1. Make sure Java is downloaded and installed
 (http://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html)
 2. Download the repository as a .zip file
