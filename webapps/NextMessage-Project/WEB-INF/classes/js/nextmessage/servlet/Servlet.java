@@ -34,8 +34,8 @@ import js.nextmessage.util.RunServerSwingWorker;
 * External Libraries/Resources used: Twilio/Twiml API, WindowBuilder, Apache Tomcat, Ngrok, JSoup, JFreeChart
 * 
 * Author: Jaret Stillman (jrsstill@umich.edu)
-* Version: 2.3
-* Date: 8/10/17
+* Version: 2.4
+* Date: 9/18/17
 */
 
 public class Servlet extends HttpServlet
@@ -176,6 +176,7 @@ public class Servlet extends HttpServlet
 					break;
 				default:
 					inMsg = inMsg.replace("$", "");
+					inMsg = inMsg.replace(",", "");
 					int delimit = inMsg.indexOf(" to ");
 					if(inMsg.toLowerCase().equals("companies"))
 					{

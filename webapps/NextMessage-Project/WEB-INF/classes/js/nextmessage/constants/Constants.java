@@ -20,9 +20,9 @@ public class Constants
 	public static ArrayList<Investment> INVESTMENTS; //ArrayList of unique investments
 	public static NumberMap NUMBERMAP; //Map of numbers to companies
 	
-	public static final String VERSION = "2.3";
+	public static final String VERSION = "2.4";
 	public static final String FILE_DIRECTORY = "../REPORTS/";
-	public static final double PRINCIPLE_AMOUNT = 1000.0;
+	public static final double PRINCIPLE_AMOUNT = 10000.0;
 	public static final DecimalFormat df = new DecimalFormat("#0.00");
 	public static String ACCOUNT_SID;
 	public static String AUTH_TOKEN;
